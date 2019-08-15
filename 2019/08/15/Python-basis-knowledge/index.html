@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: Booklist | JunLin&#39;s home</title>
+  <title>Python-basis-knowledge | JunLin&#39;s home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="JunLin&#39;s home">
-<meta property="og:url" content="http://yoursite.com/tags/Booklist/index.html">
+  <meta name="description" content="前言：以下链接能找到的知识，本文中不再重复，本文只对描述得不够详尽的内容进行补充或扩展。  Python3官方文档 廖雪峰Python3教程 菜鸟教程   1. 环境搭建">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python-basis-knowledge">
+<meta property="og:url" content="http://yoursite.com/2019/08/15/Python-basis-knowledge/index.html">
 <meta property="og:site_name" content="JunLin&#39;s home">
+<meta property="og:description" content="前言：以下链接能找到的知识，本文中不再重复，本文只对描述得不够详尽的内容进行补充或扩展。  Python3官方文档 廖雪峰Python3教程 菜鸟教程   1. 环境搭建">
 <meta property="og:locale" content="EN">
+<meta property="og:updated_time" content="2019-08-15T08:48:48.327Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JunLin&#39;s home">
+<meta name="twitter:title" content="Python-basis-knowledge">
+<meta name="twitter:description" content="前言：以下链接能找到的知识，本文中不再重复，本文只对描述得不够详尽的内容进行补充或扩展。  Python3官方文档 廖雪峰Python3教程 菜鸟教程   1. 环境搭建">
   
     <link rel="alternative" href="/atom.xml" title="JunLin&#39;s home" type="application/atom+xml">
   
@@ -137,60 +142,189 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Python-basis-knowledge" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/10/My-Book-list/" class="archive-article-date">
-  	<time datetime="2019-08-10T05:21:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/10/My-Book-list/">My Book list</a>
+    <h1 class="article-title" itemprop="name">
+      Python-basis-knowledge
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/08/15/Python-basis-knowledge/" class="archive-article-date">
+  	<time datetime="2019-08-15T07:42:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>前言：以下链接能找到的知识，本文中不再重复，本文只对描述得不够详尽的内容进行补充或扩展。</p>
+<ul>
+<li><a href="https://docs.python.org/3/library/index.html" target="_blank" rel="noopener">Python3官方文档</a></li>
+<li><a href="https://www.liaoxuefeng.com/wiki/1016959663602400" target="_blank" rel="noopener">廖雪峰Python3教程</a></li>
+<li><a href="https://www.runoob.com/python3/python3-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a></li>
+</ul>
+</blockquote>
+<h1 id="1-环境搭建"><a href="#1-环境搭建" class="headerlink" title="1. 环境搭建"></a>1. 环境搭建</h1><a id="more"></a>
+<p>略</p>
+<p>将精度高的浮点数转换成精度低的浮点数：</p>
+<ol>
+<li>round()内置方法</li>
+</ol>
+<p>a. round()如果只有一个数作为参数，不指定位数的时候，返回的是一个整数，而且是最靠近的整数（这点上类似四舍五入）</p>
+<p>b. 但是当出现.5的时候，两边的距离都一样，round()取靠近的偶数</p>
+<p>c. 当指定取舍的小数点位数的时候，一般情况也是使用四舍五入的规则，但是碰到.5的这样情况，如果要取舍的位数前的小树是奇数，则直接舍弃，如果偶数这向上取舍</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">1.5</span>)</span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">2.675</span>)</span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">2.675</span>, <span class="number">2</span>)</span><br><span class="line"><span class="number">2.67</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">2.635</span>, <span class="number">2</span>)</span><br><span class="line"><span class="number">2.63</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">2.645</span>, <span class="number">2</span>)</span><br><span class="line"><span class="number">2.65</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">2.655</span>, <span class="number">2</span>)</span><br><span class="line"><span class="number">2.65</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>round(<span class="number">2.665</span>, <span class="number">2</span>)</span><br><span class="line"><span class="number">2.67</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>使用格式化</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = (<span class="string">"%.2f"</span> % <span class="number">2.635</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line"><span class="string">'2.63'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = (<span class="string">"%.2f"</span> % <span class="number">2.645</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line"><span class="string">'2.65'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = int(<span class="number">2.5</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a</span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Booklist</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/15/Python-basis-knowledge/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/08/15/Python-Module-usecase/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Python-Module_usecase
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2019/08/10/My-Book-list/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">My Book list</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-环境搭建"><span class="toc-number">1.</span> <span class="toc-text">1. 环境搭建</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -213,9 +347,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
